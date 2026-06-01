@@ -79,6 +79,22 @@ make format         # format
 2. SWOT / 3C / PEST / OKR 프레임워크 기반 분석
 3. 업로드/붙여넣기 자료 요약 및 실행 항목 추출
 
+## 추가 문서
+
+- [Windows / WSL2 개발환경 검증 체크리스트](docs/wsl2-checklist.md)
+- [배포 후보 조사 및 연결 준비](docs/deployment-candidates.md)
+
+## Troubleshooting
+
+### `make setup`에서 Python venv 생성이 실패할 때
+
+기존 로컬 가상환경이 깨졌을 수 있습니다. 아래처럼 git에 올라가지 않는 생성물만 지우고 다시 실행합니다.
+
+```bash
+rm -rf apps/api/.venv
+make setup
+```
+
 ## Secret 관리
 
 `.env`에는 실제 토큰을 넣어도 되지만 절대 commit하지 않습니다. `.gitignore`에 포함되어 있습니다.
