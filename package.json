@@ -1,0 +1,16 @@
+{
+  "name": "new-project",
+  "private": true,
+  "version": "0.1.0",
+  "description": "전략기획 업무를 돕는 어시스턴트 서비스",
+  "scripts": {
+    "dev": "pnpm --parallel --filter @new-project/web dev",
+    "lint": "pnpm --filter @new-project/web lint",
+    "format": "pnpm --filter @new-project/web format"
+  },
+  "packageManager": "pnpm@10.33.2",
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=10.0.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "editor.formatOnSave": true,
+  "files.eol": "
+",
+  "python.defaultInterpreterPath": "apps/api/.venv/bin/python"
+}
